@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic Unit Converter</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0A84FF">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="waves">
+  <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
+    <path d="M0,100 C150,200 350,0 600,100 850,200 1050,0 1200,100 L1200,0 L0,0 Z"/>
+  </svg>
+</div>
+
+<div class="converter-card">
+
+<h1 data-i18n="title">Unit Converter</h1>
+
+<div id="imp" class="input-group">
+  <span class="label" data-i18n="feet">Feet</span>
+  <input id="ft" type="number">
+  <span class="label" data-i18n="inch">Inches</span>
+  <input id="inch" type="number">
+</div>
+
+<div id="met" class="input-group hidden">
+  <span class="label" data-i18n="cm">Centimeters</span>
+  <input id="cm" type="number">
+</div>
+
+<div class="toggle">
+  <div class="arrow" id="toggleBtn">⌄</div>
+</div>
+
+<div class="result">
+  <span data-i18n="result">RESULT</span>
+  <div id="out">0.00</div>
+</div>
+
+<div class="lang-switch" id="langSwitch">
+  <div class="lang-liquid" id="liquid"></div>
+  <div class="lang">TH</div>
+  <div class="lang">EN</div>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
